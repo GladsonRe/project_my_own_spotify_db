@@ -25,9 +25,9 @@ O projeto é executado por meio de dois scripts:
 ## Premissas adotadas
 
 Eu precisei adotar algumas premissas básicas para o meu projeto. Acredito que algumas escolhas poderiam ter sido diferentes a depender do contexto, então criei essa seção pra explicar o motivo delas:
-**CHAVES DAS TABELAS**: Optei por criar chaves próprias para o meu banco apenas a nível de prática. Acho que nesse caso a melhor solução seria usar o próprio sistema de IDs criado pelo spotify. As chaves originais foram mantidas nas tabelas.
-**RELACIONAMENTO 1:N (T_ALBUM x T_ARTISTS)**: Essa aqui foi uma observação que surgiu durante o desenvolvimento do projeto... Quando falamos de música, não é tão comum termos um album assinado por mais de um artista (mas é possível). De forma geral, em música é bem mais comum (através dos feats). Diante disso, optei por deixar a definição de que um artista pode ter vários albums, mas um album pertence a um único artista (1:N). Bem, esse erro de percurso vai me economizar algum espaço, mas pode gerar uma informação errônea.
-**REGISTROS DUPLICADOS ?**: O script de geração das bases possui controle de registros duplicados
+- **CHAVES DAS TABELAS**: Optei por criar chaves próprias para o meu banco apenas a nível de prática. Acho que nesse caso a melhor solução seria usar o próprio sistema de IDs criado pelo spotify. As chaves originais foram mantidas nas tabelas.
+- **RELACIONAMENTO 1:N (T_ALBUM x T_ARTISTS)**: Essa aqui foi uma observação que surgiu durante o desenvolvimento do projeto... Quando falamos de música, não é tão comum termos um album assinado por mais de um artista (mas é possível). De forma geral, em música é bem mais comum (através dos feats). Diante disso, optei por deixar a definição de que um artista pode ter vários albums, mas um album pertence a um único artista (1:N). Bem, esse erro de percurso vai me economizar algum espaço, mas pode gerar uma informação imprecisa.
+- **REGISTROS DUPLICADOS ?**: O script de geração das bases possui controle de registros duplicados
 
 ## Como Utilizar o Projeto
 
